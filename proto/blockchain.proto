@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package types;
-//option go_package = "github.com/aergoio/aergo/types";
+option go_package = "/types";
 
 message Block {
   bytes hash = 1;
@@ -42,6 +42,7 @@ enum TxType {
   TRANSFER = 4;
   CALL = 5;
   DEPLOY = 6;
+  EVM = 7;
 }
 
 message Tx {
